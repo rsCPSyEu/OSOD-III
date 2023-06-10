@@ -1,41 +1,24 @@
 # OSOD-III 
 
 ## Overview
-This is an official repository for a preprint **Rectifying Open-set Object Detection: A Taxonomy, Practical Applications, and Proper Evaluation**.
-We provide links to benchmark datasets used in the experiments.
+This is an official repository for **Rectifying Open-Set Object Detection: Proper Evaluation and a Taxonomy** (a submission to the 37th Conference on Neural Information Processing Systems Datasets and Benchmarks Track).
 
-We prepare for three datasets; 
-* [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html)
-* [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/)
-* [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign)
+We provide access to three datasets employed in our experiments;
+[Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html), [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/), and [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign).
 
+## Downloads
+Our datasets have been redesigned specifically for the new OSOD-III task, utilizing existing datasets.
 
-## Downloads 
-Our datasets constructs with the original images (without any modifications) and redesigned annotation files.
+To download the original images, please access to the original resources and follow the instructions;
+- [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html)
+- [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/)
+- [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign)
 
-- [Images]
-    - Please access to the official URL (listed above) and download them in your environment.
-- [Annotations]
-    - Please access to our dropbox [here](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0) to get the annotation files.
+For downloading and extracting the annotation files, please access [this link](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0) and follow the instruction below.
 
-
-## Usage
-All annotation data follow [MSCOCO](https://cocodataset.org/#home) format.
-We can use pycocotools to load these annotation files like:
-```
-from pycocotools.coco import COCO
-cub200 = COCO('path/to/annotaion/tX_train.json') # this instance can be used as coco_api
-```
-
-
-Each datasets contain some **splits** and corresponding annotations.
-In each split, known and unknown classes are different. 
-To check the list of known categories, please see the file ```category_X.txt```.
-
-
-> Open Images
-- Follow instructions in [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html) and download original data.
-- Place the dataset as followings:
+### Open Images
+- Download the original images from [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html).
+- Place the dataset as follows:
 ```
 - datasets
     - OpenImages
@@ -53,10 +36,9 @@ To check the list of known categories, please see the file ```category_X.txt```.
                 - ...
 ```
 
-
-> CUB200
-- Follow instructions in [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/) and download original data.
-- Place the dataset as followings:
+### CUB200
+- Download the original images from [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/).
+- Place the dataset as follows:
 ```
 - datasets
     - CUB_200_2011
@@ -68,10 +50,9 @@ To check the list of known categories, please see the file ```category_X.txt```.
             - ...
 ```
 
-
-> MTSD
-- Follow instructions in [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign) and download original data.
-- Place the dataset as followings:
+### MTSD
+- Download the original images from [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign).
+- Place the dataset as follows:
 ```
 - datasets
     - Mapillary_Traffic_Sign
@@ -81,4 +62,15 @@ To check the list of known categories, please see the file ```category_X.txt```.
         - spectral_clustering
             - tx_train.json
             - ...
+```
+
+## Usage
+Each datasets are separeted into some **splits** according to the known/unknown classes.
+To check the list of known categories, please see the file ```category_X.txt```.
+
+All annotation data follow [MSCOCO](https://cocodataset.org/#home) format.
+We can use pycocotools to load these annotation files like:
+```
+from pycocotools.coco import COCO
+cub200 = COCO('path/to/annotaion/tX_train.json') # this instance can be used as coco_api
 ```

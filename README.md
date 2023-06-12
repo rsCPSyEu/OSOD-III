@@ -64,13 +64,24 @@ For downloading and extracting the annotation files, please access [this link](h
             - ...
 ```
 
-## Usage
-Each datasets are separeted into some **splits** according to the known/unknown classes.
-To check the list of known categories, please see the file ```category_X.txt```.
+## Details of the Datasets
+Each dataset is separeted into some **splits** according to its known/unknown classes.
+For each split, we have a category list ```category_X.txt``` and corresponding annotation file ```X_train.json```.
 
-All annotation data follow [MSCOCO](https://cocodataset.org/#home) format.
-We can use pycocotools to load these annotation files like:
+Please see ```category_X.txt``` to check the names of known/unknown categories.
+For example, ```category_t1.txt``` for CUB200 contains 50 category names of split1;
 ```
+Black_footed_Albatross
+Laysan_Albatross
+Least_Auklet
+Red_winged_Blackbird
+...
+```
+
+```X_train.json``` is an annotation file following [MSCOCO](https://cocodataset.org/#home)'s annotation format.
+We can use pycocotools to load these annotation files and as follows;
+```
+# Please install pycocotools in advance using ```pip install pycocotools``` or ```conda install -c conda-forge pycocotools```.
 from pycocotools.coco import COCO
-cub200 = COCO('path/to/annotaion/tX_train.json') # this instance can be used as coco_api
+cub200 = COCO('path/to/annotaion/t1_train.json') # this instance can be used as coco_api
 ```

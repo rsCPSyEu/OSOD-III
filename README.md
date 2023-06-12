@@ -14,7 +14,7 @@ To download the original images, please access to the original resources and fol
 - [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/)
 - [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign)
 
-For downloading and extracting the annotation files, please access [this link](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0) and follow the instruction below.
+For downloading/extracting the annotation files, please access [this link](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0) and follow the instruction below.
 
 ### Open Images
 - Download the original images from [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html).

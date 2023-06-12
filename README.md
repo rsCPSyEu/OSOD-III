@@ -123,11 +123,13 @@ pip install -v -e .
                     └── ...
         </pre>
 
+
+### Checkpoints
+We provide pretrained weights soon.
+
+
 ### Evaluation
 To evaluate our models, run the following command;
 ```
 python tools/train_net.py --num_gpus 8 --config-file path/to/configfile --eval-only MODEL.WEIGHTS path/to/model
 ```
-
-### Checkpoints
-We provide pretrained weights soon.

@@ -9,15 +9,17 @@ i.e., [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6
 
 
 ## Datasets
-- Download Images  
-    We reuse existing datasets for the images without any modifications.  
-    To download the images, please access to each original resource and follow its instruction;
-    - [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html)
-    - [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/)
-    - [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign)
-- Donload Annotations  
-    We redesinged existing annotations for the new OSOD-III scenario.  
-    For downloading/extracting our annotation files, please access [this link](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0).
+
+#### Download Images  
+We reuse existing datasets for the images without any modifications.  
+To download the images, please access to each original resource and follow its instruction;
+- [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html)
+- [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/)
+- [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign)
+
+#### Donload Annotations  
+We redesinged existing annotations for the new OSOD-III scenario.  
+For downloading/extracting our annotation files, please access [this link](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0).
 
 
 ## How to Use

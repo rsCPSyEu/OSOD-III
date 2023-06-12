@@ -127,6 +127,11 @@ pip install -v -e .
 ### Checkpoints
 We provide pretrained weights soon.
 
+| TH1 | TH2 |
+----|---- 
+| TD1 | TD3 |
+| TD2 | TD4 |
+
 
 ### Evaluation
 To evaluate our models, run the following command;

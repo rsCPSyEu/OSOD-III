@@ -130,7 +130,7 @@ We provide pretrained weights soon.
 Faster RCNN (baseline)
 | Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | config |
 |:---:|:---:|:---:|:---:|:---:|
-| OpenImages |  |  |  |  |
+| OpenImages |  |  |  | [cfg](configs/OpenImages/animal/faster_rcnn_R_50_FPN_3x_opendet_t1.yaml) |
 | CUB200     |  |  |  |  |
 | MTSD       |  |  |  |  |
 

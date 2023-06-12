@@ -6,7 +6,7 @@ This is an official repository for **Rectifying Open-Set Object Detection: Prope
 We provide access to three datasets employed in our experiments;
 [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html), [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/), and [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign).
 
-## Downloads
+## Datasets
 Our datasets have been redesigned specifically for the new OSOD-III task, utilizing existing datasets.
 
 To download the original images, please access to the original resources and follow the instructions;
@@ -16,7 +16,7 @@ To download the original images, please access to the original resources and fol
 
 For downloading/extracting the annotation files, please access [this link](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0) and follow the instruction below.
 
-### Open Images
+#### Open Images
 - Download the original images from [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html).
 - Place the dataset as follows:
 ```
@@ -36,7 +36,7 @@ For downloading/extracting the annotation files, please access [this link](https
                 - ...
 ```
 
-### CUB200
+#### CUB200
 - Download the original images from [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/).
 - Place the dataset as follows:
 ```
@@ -50,7 +50,7 @@ For downloading/extracting the annotation files, please access [this link](https
             - ...
 ```
 
-### MTSD
+#### MTSD
 - Download the original images from [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign).
 - Place the dataset as follows:
 ```
@@ -85,3 +85,9 @@ We can use pycocotools to load these annotation files and as follows;
 from pycocotools.coco import COCO
 cub200 = COCO('path/to/annotaion/t1_train.json') # this instance can be used as coco_api
 ```
+
+
+## Evaluation Code
+We also release our evaluation code soon.
+
+### Installation

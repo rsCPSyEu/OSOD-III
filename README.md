@@ -74,32 +74,31 @@ pip install -v -e .
         - Download the original images from [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html).
         - Place the dataset as follows:
         <pre>
-        - datasets
-            ├── OpenImages
-                - train
-                    - xxx.png
-                    - ...
-                - validation
-                - test
-
-                - annotations
-                    - animal
-                        - tx_train.json
-                        - ...
-                    - vehicle
-                        - ...
+        ── datasets
+            └── OpenImages
+                ├── train
+                │   ├── xxx.png
+                │   └── ...
+                ├── validation
+                ├── test
+                └── annotations
+                    ├── animal
+                    │   ├── tx_train.json
+                    │   └── ...
+                    └── vehicle
+                        └── ...
         </pre>
 
     - CUB200
         - Download the original images from [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/).
         - Place the dataset as follows:
         <pre>
-        └── datasets
+        ── datasets
             └── CUB_200_2011
                 ├── images
-                    ├── 001.Black_footed_Albatross
-                    ├── 002. ...
-                    ...
+                │   ├── 001.Black_footed_Albatross
+                │   ├── 002. ...
+                │   └── ...
                 └── random_separation
                     ├── tx_train.json
                     └── ...
@@ -108,13 +107,17 @@ pip install -v -e .
     - MTSD
         - Download the original images from [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign).
         - Place the dataset as follows:
-        ```
-        - datasets
-            - Mapillary_Traffic_Sign
-                - images
-                    - xxx.jpg
-                    - ...
-                - spectral_clustering
-                    - tx_train.json
-                    - ...
-        ```
+        <pre>
+        ── datasets
+            └── Mapillary_Traffic_Sign
+                ├── images
+                │   ├── xxx.jpg
+                │   └── ...
+                └── spectral_clustering
+                    ├── tx_train.json
+                    └── ...
+        </pre>
+
+### Evaluation
+To evaluate our models, run the following command;
+`python tools/train_net.py --num_gpus 8 --config-file path/to/configfile --eval-only MODEL.WEIGHTS path/to/model`

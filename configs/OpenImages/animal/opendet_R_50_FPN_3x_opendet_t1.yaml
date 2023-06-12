@@ -1,0 +1,24 @@
+_BASE_: "../../Base-RCNN-FPN-OPENDET.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    NUM_CLASSES: 602
+    NUM_KNOWN_CLASSES: 24
+DATASETS:
+  TRAIN: ('seed100_animal_t1_openimages_v6_train', )
+  TEST: ('seed100_animal_t1_openimages_v6_test', )
+SOLVER:
+  STEPS: (14000, 18000)
+  MAX_ITER: 20000
+  WARMUP_ITERS: 100
+  AMP:
+    ENABLED: True
+OWOD:
+  PREV_INTRODUCED_CLS: 0
+  CUR_INTRODUCED_CLS: 24
+  EVAL_UNKNOWN: True
+  EVAL_TARGET_CLS: 96
+
+# UPLOSS.WEIGHT: former two are 0.5, the last is 1.0

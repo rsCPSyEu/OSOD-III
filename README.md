@@ -19,15 +19,14 @@ To download the images, please access to each original resource and follow its i
 
 #### Donload Annotations  
 We redesinged existing annotations for the new OSOD-III scenario.  
-For downloading/extracting our annotation files, please access [this link](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0).
+For downloading our annotation files, please access [this link](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0).
 
 
 ## How to Use
-Each dataset is separeted into some **splits** according to its known/unknown classes.  
-For each split, we have a category list ```category_X.txt``` and corresponding annotation file ```X_train.json```.
+In our datasets, each dataset is separeted into some **splits** according to its known/unknown classes. For each split, we have a category list ```category_X.txt``` and corresponding annotation file ```X_train.json```.
 
 Please see ```category_X.txt``` to check the list of known/unknown categories.  
-For example, ```category_t1.txt``` for CUB200 contains 50 category names of split1;
+For example, ```category_t1.txt``` for CUB200 contains 50 category names of split1 as follows;
 ```
 Black_footed_Albatross
 Laysan_Albatross
@@ -36,7 +35,7 @@ Red_winged_Blackbird
 ...
 ```
 
-All annotation files follows [MSCOCO](https://cocodataset.org/#home)'s format.  
+Our annotation files follow [MSCOCO](https://cocodataset.org/#home)'s format.  
 Thus, we can use *pycocotools* to load these annotation files and as follows;
 ```
 from pycocotools.coco import COCO
@@ -47,7 +46,7 @@ Please install pycocotools in advance using `pip install pycocotools` or `conda 
 ---
 
 ## Evaluation Code
-We also release our evaluation code soon.
+We also provide our evaluation code.
 
 ### Installation
 We use a repository of [OpenDet2](https://github.com/csuhan/opendet2), which is based on [Detectron2-v0.5](https://github.com/facebookresearch/detectron2/tree/v0.5).  
@@ -129,3 +128,6 @@ To evaluate our models, run the following command;
 ```
 python tools/train_net.py --num_gpus 8 --config-file path/to/configfile --eval-only MODEL.WEIGHTS path/to/model
 ```
+
+### Checkpoints
+We provide pretrained weights soon.

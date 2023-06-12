@@ -73,9 +73,9 @@ pip install -v -e .
     - Open Images
         - Download the original images from [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html).
         - Place the dataset as follows:
-        ```
+        <pre>
         - datasets
-            - OpenImages
+            ├── OpenImages
                 - train
                     - xxx.png
                     - ...
@@ -88,21 +88,22 @@ pip install -v -e .
                         - ...
                     - vehicle
                         - ...
-        ```
+        </pre>
 
     - CUB200
         - Download the original images from [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/).
         - Place the dataset as follows:
-        ```
-        - datasets
-            - CUB_200_2011
-                - images
-                    - 001.Black_footed_Albatross
-                    - 002. ...
-                - random_separation
-                    - tx_train.json
-                    - ...
-        ```
+        <pre>
+        └── datasets
+            └── CUB_200_2011
+                ├── images
+                    ├── 001.Black_footed_Albatross
+                    ├── 002. ...
+                    ...
+                └── random_separation
+                    ├── tx_train.json
+                    └── ...
+        </pre>
 
     - MTSD
         - Download the original images from [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign).

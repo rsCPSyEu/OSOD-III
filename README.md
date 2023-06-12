@@ -9,13 +9,13 @@ i.e., [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6
 
 
 ## Datasets
-- Download Images
+- Download Images  
     We reuse existing datasets for the images without any modifications.  
     To download the images, please access to each original resource and follow its instruction;
     - [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html)
     - [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/)
     - [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign)
-- Donload Annotations
+- Donload Annotations  
     We redesinged existing annotations for the new OSOD-III scenario.  
     For downloading/extracting our annotation files, please access [this link](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0).
 
@@ -24,7 +24,7 @@ i.e., [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6
 Each dataset is separeted into some **splits** according to its known/unknown classes.  
 For each split, we have a category list ```category_X.txt``` and corresponding annotation file ```X_train.json```.
 
-Please see ```category_X.txt``` to check the names of known/unknown categories.
+Please see ```category_X.txt``` to check the list of known/unknown categories.  
 For example, ```category_t1.txt``` for CUB200 contains 50 category names of split1;
 ```
 Black_footed_Albatross
@@ -35,10 +35,10 @@ Red_winged_Blackbird
 ```
 
 All annotation files follows [MSCOCO](https://cocodataset.org/#home)'s format.  
-Thus, we can use ~pycocotools~ to load these annotation files and as follows;
+Thus, we can use *pycocotools* to load these annotation files and as follows;
 ```
 from pycocotools.coco import COCO
-cub200 = COCO('path/to/annotaion/t1_train.json') # this instance can be used as coco_api
+cub200 = COCO('path/to/annotaion/t1_train.json') # this instance can be used as dataset-api
 ```
 Please install pycocotools in advance using `pip install pycocotools` or `conda install -c conda-forge pycocotools`.
 

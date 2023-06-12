@@ -127,10 +127,19 @@ pip install -v -e .
 ### Checkpoints
 We provide pretrained weights soon.
 
-| methods | $AP_{known}$ | $AP_{unk}$ | models | config |
+Faster RCNN (baseline)
+| Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | config |
 |:---:|:---:|:---:|:---:|:---:|
-| Faster RCNN |  |  |  |  |
-| OpenDet     |  |  |  |  |
+| OpenImages |  |  |  |  |
+| CUB200     |  |  |  |  |
+| MTSD       |  |  |  |  |
+
+OpenDet
+| Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | config |
+|:---:|:---:|:---:|:---:|:---:|
+| OpenImages |  |  |  |  |
+| CUB200     |  |  |  |  |
+| MTSD       |  |  |  |  |
 
 
 ### Evaluation

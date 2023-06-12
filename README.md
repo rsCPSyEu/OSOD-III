@@ -1,20 +1,24 @@
 # OSOD-III 
 
+
 ## Overview
-This is an official repository for **Rectifying Open-Set Object Detection: Proper Evaluation and a Taxonomy** (a submission to the 37th Conference on Neural Information Processing Systems Datasets and Benchmarks Track).
+This is an official repository for **"Rectifying Open-Set Object Detection: Proper Evaluation and a Taxonomy"** (a submission to the 37th Conference on Neural Information Processing Systems Datasets and Benchmarks Track).
 
 We provide access to three datasets employed in our experiments;  
-[Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html), [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/), and [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign).
+i.e., [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html), [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/), and [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign).
+
 
 ## Datasets
-Our datasets have been redesigned specifically for the new OSOD-III task, utilizing existing datasets.
+- Download Images
+    We reuse existing datasets for the images without any modifications.  
+    To download the images, please access to each original resource and follow its instruction;
+    - [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html)
+    - [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/)
+    - [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign)
+- Donload Annotations
+    We redesinged existing annotations for the new OSOD-III scenario.  
+    For downloading/extracting our annotation files, please access [this link](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0).
 
-To download the original images, please access to the original resources and follow the instructions;
-- [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html)
-- [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/)
-- [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign)
-
-For downloading/extracting the annotation files, please access [this link](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0).
 
 ## How to Use
 Each dataset is separeted into some **splits** according to its known/unknown classes.  
@@ -30,13 +34,13 @@ Red_winged_Blackbird
 ...
 ```
 
-```X_train.json``` is an annotation file following [MSCOCO](https://cocodataset.org/#home)'s annotation format.  
-We can use pycocotools to load these annotation files and as follows;
+All annotation files follows [MSCOCO](https://cocodataset.org/#home)'s format.  
+Thus, we can use ~pycocotools~ to load these annotation files and as follows;
 ```
-# Please install pycocotools in advance using ```pip install pycocotools``` or ```conda install -c conda-forge pycocotools```.
 from pycocotools.coco import COCO
 cub200 = COCO('path/to/annotaion/t1_train.json') # this instance can be used as coco_api
 ```
+Please install pycocotools in advance using `pip install pycocotools` or `conda install -c conda-forge pycocotools`.
 
 ---
 
@@ -44,7 +48,7 @@ cub200 = COCO('path/to/annotaion/t1_train.json') # this instance can be used as 
 We also release our evaluation code soon.
 
 ### Installation
-We use a repository of [OpenDet2](https://github.com/csuhan/opendet2) which is based on [Detectron2-v0.5](https://github.com/facebookresearch/detectron2/tree/v0.5) project.
+We use a repository of [OpenDet2](https://github.com/csuhan/opendet2), which is based on [Detectron2-v0.5](https://github.com/facebookresearch/detectron2/tree/v0.5).  
 
 - Setup the environment
 ```
@@ -65,7 +69,7 @@ git clone https://github.com/rsCPSyEu/OSOD-III.git
 cd OSOD-III
 pip install -v -e .
 
-# [optional] if the build process does not work well, downgrade of setuptools may help you.
+# [optional] if the build process does not work well, change the version of setuptools may help you.
 # conda install -c conda-forge setuptools=42
 ```
 
@@ -120,4 +124,6 @@ pip install -v -e .
 
 ### Evaluation
 To evaluate our models, run the following command;
-`python tools/train_net.py --num_gpus 8 --config-file path/to/configfile --eval-only MODEL.WEIGHTS path/to/model`
+```
+python tools/train_net.py --num_gpus 8 --config-file path/to/configfile --eval-only MODEL.WEIGHTS path/to/model
+```

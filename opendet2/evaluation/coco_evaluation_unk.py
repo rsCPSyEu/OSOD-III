@@ -183,34 +183,6 @@ class COCOEvaluator_unk(DatasetEvaluator):
         self.rmovl_conf_th = cfg.OWOD.RMOVL_CONF_TH # compare only the predictions whose confidence are above this th
         self.rmovl_iou_th = cfg.OWOD.RMOVL_IOU_TH # remove if iou btw known and unknown predictions are higher than this th
 
-        # self.eval_entropy = cfg.EVAL_ENTROPY
-        # self.eval_sigmoid = cfg.EVAL_SIGMOID
-        # self.eval_feat_embed = cfg.EXTRACTS_EMBED
-
-    # def create_distribution(self, scale, shape, shift):
-    #     wd = Weibull(scale=scale, concentration=shape) # in pytorch==1.7
-    #     wd = Weibull(scale=scale, concentration=shape, validate_args=False) # in pytorch>=1.8
-    #     transforms = AffineTransform(loc=shift, scale=1.)
-    #     # weibull = TransformedDistribution(wd, transforms) # in pytorch==1.7
-    #     weibull = TransformedDistribution(wd, transforms, validate_args=False) # in pytorch>=1.8
-    #     return weibull
-
-
-    # def compute_prob(self, x, distribution):
-    #     eps_radius = 0.5
-    #     num_eval_points = 100
-    #     start_x = x - eps_radius
-    #     end_x = x + eps_radius
-    #     step = (end_x - start_x) / num_eval_points
-    #     dx = torch.linspace(x - eps_radius, x + eps_radius, num_eval_points)
-    #     # try: 
-    #     #     pdf = distribution.log_prob(dx).exp()
-    #     # except ValueError:
-    #     #     import ipdb; ipdb.set_trace()
-    #     pdf = distribution.log_prob(dx).exp()
-    #     prob = torch.sum(pdf * step)
-    #     return prob
-
 
     def reset(self):
         self._predictions = []

@@ -186,12 +186,7 @@ def inference_on_dataset(model, data_loader, evaluator, cfg=None, eval_unknown=F
     )
     
     # hard coding setting
-    results = evaluator.evaluate(others_attrs)
-    if eval_unknown:
-        predictions = evaluator.save_predictions_vos()
-        if predictions is not None: # only main process
-            _ = evaluator.evaluate_unk(predictions, others_attrs)
-            
+    results = evaluator.evaluate(others_attrs)            
     # An evaluator may return None when not in main process.
     # Replace it by an empty dict instead to make it easier for downstream code to handle
     if results is None:

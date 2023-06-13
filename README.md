@@ -51,8 +51,8 @@ We also provide our evaluation code.
 ### Installation
 We use a repository of [OpenDet2](https://github.com/csuhan/opendet2), which is based on [Detectron2-v0.5](https://github.com/facebookresearch/detectron2/tree/v0.5).  
 
-- Setup the environment
-```
+- Setup conda environment
+<pre>
 env_name=osod3
 conda create -n ${env_name} python=3.8 -y
 conda activate ${env_name}
@@ -72,7 +72,7 @@ pip install -v -e .
 
 # [optional] if the build process does not work well, change the version of setuptools may help you.
 # conda install -c conda-forge setuptools=42
-```
+</pre>
 
 - Setup dataset links
     - Open Images
@@ -130,20 +130,20 @@ We provide pretrained weights soon.
 Faster RCNN (baseline)
 | Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | config |
 |:---:|:---:|:---:|:---:|:---:|
-| OpenImages |  |  |  | [cfg](configs/OpenImages/animal/faster_rcnn_R_50_FPN_3x_opendet_t1.yaml) |
-| CUB200     |  |  |  |  |
-| MTSD       |  |  |  |  |
+| OpenImages | $36.9 \pm8.1$ | $33.0 \pm4.5$ |  | [animal](configs/OpenImages/animal)/[vehicle](configs/OpenImages/vehicle) |
+| CUB200     |  |  |  | [cfg](configs/CUB200/random) |
+| MTSD       |  |  |  | [cfg](configs/MTSD/spclust) |
 
 OpenDet
 | Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | config |
 |:---:|:---:|:---:|:---:|:---:|
-| OpenImages |  |  |  |  |
-| CUB200     |  |  |  |  |
-| MTSD       |  |  |  |  |
+| OpenImages |  |  |  | [animal](configs/OpenImages/animal)/[vehicle](configs/OpenImages/vehicle) |
+| CUB200     |  |  |  | [cfg](configs/CUB200/random) |
+| MTSD       |  |  |  | [cfg](configs/MTSD/spclust) |
 
 
 ### Evaluation
 To evaluate our models, run the following command;
-```
+<pre>
 python tools/train_net.py --num_gpus 8 --config-file path/to/configfile --eval-only MODEL.WEIGHTS path/to/model
-```
+</pre>

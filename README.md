@@ -130,18 +130,18 @@ We provide pretrained weights soon.
 Faster RCNN (baseline)
 | Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | config |
 |:---:|:---:|:---:|:---:|:---:|
-| OpenImages-Animal  | | |  | [cfg](configs/OpenImages/animal) |
-| OpenImages-Vehicle | | |  | [cfg](configs/OpenImages/vehicle) |
-| CUB200     |  |  |  | [cfg](configs/CUB200/random) |
-| MTSD       |  |  |  | [cfg](configs/MTSD/spclust) |
+| OpenImages-Animal  | 37.8 $\pm$ 3.1 | 35.3 $\pm$ 3.9 |  | [cfg](configs/OpenImages/animal)  |
+| OpenImages-Vehicle | 39.9 $\pm$ 8.7 | 17.0 $\pm$ 5.2 |  | [cfg](configs/OpenImages/vehicle) |
+| CUB200             | 62.2 $\pm$ 1.0 | 24.2 $\pm$ 1.9 |  | [cfg](configs/CUB200/random)      |
+| MTSD               | 50.0           |  3.1 $\pm$ 1.2 |  | [cfg](configs/MTSD/spclust)       |
 
 OpenDet
-| Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | config |
+| Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | cfg |
 |:---:|:---:|:---:|:---:|:---:|
 | OpenImages-Animal  | 36.9 $\pm$ 8.1 | 33.0 $\pm$ 4.5 |  | [cfg](configs/OpenImages/animal)  |
 | OpenImages-Vehicle | 38.7 $\pm$ 7.8 | 14.4 $\pm$ 3.3 |  | [cfg](configs/OpenImages/vehicle) |
 | CUB200             | 63.3 $\pm$ 1.1 | 27.0 $\pm$ 3.0 |  | [cfg](configs/CUB200/random)      |
-| MTSD               | 51.8        |  9.9 $\pm$ 3.9    |  | [cfg](configs/MTSD/spclust)       |
+| MTSD               | 51.8           |  9.9 $\pm$ 3.9 |  | [cfg](configs/MTSD/spclust)       |
 
 
 ### Evaluation

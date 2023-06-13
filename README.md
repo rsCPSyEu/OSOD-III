@@ -130,18 +130,18 @@ We provide pretrained weights soon.
 Faster RCNN (baseline)
 | Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | config |
 |:---:|:---:|:---:|:---:|:---:|
-| OpenImages-Animal  | 37.8 $\pm$ 3.1 | 35.3 $\pm$ 3.9 |  | [cfg](configs/OpenImages/animal)  |
-| OpenImages-Vehicle | 39.9 $\pm$ 8.7 | 17.0 $\pm$ 5.2 |  | [cfg](configs/OpenImages/vehicle) |
-| CUB200             | 62.2 $\pm$ 1.0 | 24.2 $\pm$ 1.9 |  | [cfg](configs/CUB200/random)      |
-| MTSD               | 50.0           |  3.1 $\pm$ 1.2 |  | [cfg](configs/MTSD/spclust)       |
+| OpenImages-Animal  | 37.8 $\pm$ 3.1 | 35.3 $\pm$ 3.9 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AAD5dpwKMRU06GwCcHO3SVEZa/models/OpenImages/animal/frcnn?dl=0&subfolder_nav_tracking=1) | [cfg](configs/OpenImages/animal)  |
+| OpenImages-Vehicle | 39.9 $\pm$ 8.7 | 17.0 $\pm$ 5.2 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AAB1-VcW0567GAGU8RwG05pva/models/OpenImages/vehicle/frcnn?dl=0&subfolder_nav_tracking=1) | [cfg](configs/OpenImages/vehicle) |
+| CUB200             | 62.2 $\pm$ 1.0 | 24.2 $\pm$ 1.9 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AABKvWYF0V2a2DFXc57OWfMYa/models/CUB200/frcnn?dl=0&subfolder_nav_tracking=1) | [cfg](configs/CUB200/random)      |
+| MTSD               | 50.0           |  3.1 $\pm$ 1.2 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AABwl_apMjIzcppW0GcZLzqna/models/MTSD/frcnn?dl=0&subfolder_nav_tracking=1) | [cfg](configs/MTSD/spclust)       |
 
 OpenDet
 | Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | cfg |
 |:---:|:---:|:---:|:---:|:---:|
-| OpenImages-Animal  | 36.9 $\pm$ 8.1 | 33.0 $\pm$ 4.5 |  | [cfg](configs/OpenImages/animal)  |
-| OpenImages-Vehicle | 38.7 $\pm$ 7.8 | 14.4 $\pm$ 3.3 |  | [cfg](configs/OpenImages/vehicle) |
-| CUB200             | 63.3 $\pm$ 1.1 | 27.0 $\pm$ 3.0 |  | [cfg](configs/CUB200/random)      |
-| MTSD               | 51.8           |  9.9 $\pm$ 3.9 |  | [cfg](configs/MTSD/spclust)       |
+| OpenImages-Animal  | 36.9 $\pm$ 8.1 | 33.0 $\pm$ 4.5 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AAB_W2-s9Fw6xYyRyu4rzbjOa/models/OpenImages/animal/opendet?dl=0&subfolder_nav_tracking=1) | [cfg](configs/OpenImages/animal)  |
+| OpenImages-Vehicle | 38.7 $\pm$ 7.8 | 14.4 $\pm$ 3.3 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AADRNwgu7l3_cx8Tc2X9VmHha/models/OpenImages/vehicle/opendet?dl=0&subfolder_nav_tracking=1) | [cfg](configs/OpenImages/vehicle) |
+| CUB200             | 63.3 $\pm$ 1.1 | 27.0 $\pm$ 3.0 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AABAWbSrlpyPkrEEwTmZ__Iga/models/CUB200/opendet?dl=0&subfolder_nav_tracking=1) | [cfg](configs/CUB200/random)      |
+| MTSD               | 51.8           |  9.9 $\pm$ 3.9 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AADOzloFV1bwf5pJMFeVOrJka/models/MTSD/opendet?dl=0&subfolder_nav_tracking=1) | [cfg](configs/MTSD/spclust)       |
 
 
 ### Evaluation

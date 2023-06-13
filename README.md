@@ -138,10 +138,10 @@ Faster RCNN (baseline)
 OpenDet
 | Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | config |
 |:---:|:---:|:---:|:---:|:---:|
-| OpenImages-Animal  | 36.9 $\pm$ 8.1 | $33.0 \pm4.5$ |  | [cfg](configs/OpenImages/animal)  |
-| OpenImages-Vehicle | $38.7 \pm7.8$ | $14.4 \pm3.3$ |  | [cfg](configs/OpenImages/vehicle) |
-| CUB200             | $63.3 \pm1.1$ | $27.0 ± 3.0$  |  | [cfg](configs/CUB200/random)      |
-| MTSD               | $51.8$        |  $9.9 \pm3.9$ |  | [cfg](configs/MTSD/spclust)       |
+| OpenImages-Animal  | 36.9 $\pm$ 8.1 | 33.0 $\pm$ 4.5 |  | [cfg](configs/OpenImages/animal)  |
+| OpenImages-Vehicle | 38.7 $\pm$ 7.8 | 14.4 $\pm$ 3.3 |  | [cfg](configs/OpenImages/vehicle) |
+| CUB200             | 63.3 $\pm$ 1.1 | 27.0 $\pm$ 3.0 |  | [cfg](configs/CUB200/random)      |
+| MTSD               | 51.8        |  9.9 $\pm$ 3.9    |  | [cfg](configs/MTSD/spclust)       |
 
 
 ### Evaluation

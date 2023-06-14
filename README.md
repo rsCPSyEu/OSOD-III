@@ -70,7 +70,7 @@ git clone https://github.com/rsCPSyEu/OSOD-III.git
 cd OSOD-III
 pip install -v -e .
 
-# [optional] if the build process does not work well, change the version of setuptools may help you.
+# [optional] if the build process does not work, change the version of setuptools may help you.
 # conda install -c conda-forge setuptools=42
 </pre>
 
@@ -125,7 +125,7 @@ pip install -v -e .
 
 
 ### Checkpoints
-We provide pretrained weights soon.
+We provide pretrained weights for each dataset.
 
 Faster RCNN (baseline)
 | Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | config |

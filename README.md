@@ -2,7 +2,7 @@
 
 
 ## Overview
-This is an official repository for **"Rectifying Open-Set Object Detection: Proper Evaluation and a Taxonomy"** (a submission to the 37th Conference on Neural Information Processing Systems Datasets and Benchmarks Track).
+This is an official repository for **"Rectifying Open-Set Object Detection: Proper Evaluation and a Taxonomy"**.
 
 We provide access to three datasets employed in our experiments;  
 i.e., [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html), [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/), and [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign).

@@ -134,7 +134,7 @@ We provide pretrained weights for each dataset.
 Faster RCNN (baseline)
 | Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | config |
 |:---:|:---:|:---:|:---:|:---:|
-| OpenImages-Animal  | 37.8 $\pm$ 3.1 | 35.3 $\pm$ 3.9 | [model](https://www.dropbox.com/scl/fo/3zd2dls8pde89whj7wfe9/AN_qrG1oFeDu7Uj8N1qJEPo?rlkey=ct10y4cpom32u8vkjhcyzx129&st=0r1bvka6&dl=0)  |
+| OpenImages-Animal  | 37.8 $\pm$ 3.1 | 35.3 $\pm$ 3.9 | [model](https://www.dropbox.com/scl/fo/3zd2dls8pde89whj7wfe9/AN_qrG1oFeDu7Uj8N1qJEPo?rlkey=ct10y4cpom32u8vkjhcyzx129&st=0r1bvka6&dl=0) | [cfg](configs/OpenImages/animal) |
 | OpenImages-Vehicle | 39.9 $\pm$ 8.7 | 17.0 $\pm$ 5.2 | [model](https://www.dropbox.com/scl/fo/cw5zhwqo9li2lpfjmflw0/AGqckNLGJhOKbn294cji1dI?rlkey=hae1c71qtm4zjqrieusbx3m1t&st=owlz84mk&dl=0) | [cfg](configs/OpenImages/vehicle) |
 | CUB200             | 62.2 $\pm$ 1.0 | 24.2 $\pm$ 1.9 | [model](https://www.dropbox.com/scl/fo/wpn5h716aiwd2298aot7y/AImUfh6Tb9q34G64aoAvNvs?rlkey=h6zz8c7uv69q6xntsk5x53fi2&st=rd3213rz&dl=0) | [cfg](configs/CUB200/random)      |
 | MTSD               | 50.0           |  3.1 $\pm$ 1.2 | [model](https://www.dropbox.com/scl/fo/9ucenxkyei9lz158ndi74/AC9pwYn9p1VTO63UWR3IGX4?rlkey=aobteijvyux9dzadzjgxo5m37&st=gfq52knq&dl=0) | [cfg](configs/MTSD/spclust)       |

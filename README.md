@@ -19,7 +19,10 @@ To download the images, please access to each original resource and follow its i
 
 #### Donload Annotations  
 We redesinged existing annotations for the new OSOD-III scenario.  
-For downloading our annotation files, please access [this link](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AACxgUcoT4cYfUCIQKfRB-INa?dl=0).
+For downloading our annotation files, please access [this link](https://www.dropbox.com/scl/fo/bb77kl1qdfynj0vc84uxi/AFVkV5pPxBGAfWp2zrSUSoI?rlkey=0d8qo4yx5m3ou8tnzv0ycbigs&st=gwggkr1a&dl=0).
+
+**Note that each dataset must be used in compliance with the original license.**
+Please check the license terms carefully before using it. 
 
 
 ## How to Use

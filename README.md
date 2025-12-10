@@ -22,7 +22,8 @@ We redesinged existing annotations for the new OSOD-III scenario.
 For downloading our annotation files, please access [this link](https://www.dropbox.com/scl/fo/bb77kl1qdfynj0vc84uxi/AFVkV5pPxBGAfWp2zrSUSoI?rlkey=0d8qo4yx5m3ou8tnzv0ycbigs&st=gwggkr1a&dl=0).
 
 **Note that each dataset must be used in compliance with the original license.**
-Please check the license terms carefully before using it. 
+In particular, MTSD is provided under the Creative Commons Attribution NonCommercial Share Alike (CC BY-NC-SA) license.
+Please check the license terms carefully for both the images and the annotations before using the dataset.
 
 
 ## How to Use
@@ -133,18 +134,18 @@ We provide pretrained weights for each dataset.
 Faster RCNN (baseline)
 | Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | config |
 |:---:|:---:|:---:|:---:|:---:|
-| OpenImages-Animal  | 37.8 $\pm$ 3.1 | 35.3 $\pm$ 3.9 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AAD5dpwKMRU06GwCcHO3SVEZa/models/OpenImages/animal/frcnn?dl=0&subfolder_nav_tracking=1) | [cfg](configs/OpenImages/animal)  |
-| OpenImages-Vehicle | 39.9 $\pm$ 8.7 | 17.0 $\pm$ 5.2 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AAB1-VcW0567GAGU8RwG05pva/models/OpenImages/vehicle/frcnn?dl=0&subfolder_nav_tracking=1) | [cfg](configs/OpenImages/vehicle) |
-| CUB200             | 62.2 $\pm$ 1.0 | 24.2 $\pm$ 1.9 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AABKvWYF0V2a2DFXc57OWfMYa/models/CUB200/frcnn?dl=0&subfolder_nav_tracking=1) | [cfg](configs/CUB200/random)      |
-| MTSD               | 50.0           |  3.1 $\pm$ 1.2 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AABwl_apMjIzcppW0GcZLzqna/models/MTSD/frcnn?dl=0&subfolder_nav_tracking=1) | [cfg](configs/MTSD/spclust)       |
+| OpenImages-Animal  | 37.8 $\pm$ 3.1 | 35.3 $\pm$ 3.9 | [model](https://www.dropbox.com/scl/fo/3zd2dls8pde89whj7wfe9/AN_qrG1oFeDu7Uj8N1qJEPo?rlkey=ct10y4cpom32u8vkjhcyzx129&st=0r1bvka6&dl=0)  |
+| OpenImages-Vehicle | 39.9 $\pm$ 8.7 | 17.0 $\pm$ 5.2 | [model](https://www.dropbox.com/scl/fo/cw5zhwqo9li2lpfjmflw0/AGqckNLGJhOKbn294cji1dI?rlkey=hae1c71qtm4zjqrieusbx3m1t&st=owlz84mk&dl=0) | [cfg](configs/OpenImages/vehicle) |
+| CUB200             | 62.2 $\pm$ 1.0 | 24.2 $\pm$ 1.9 | [model](https://www.dropbox.com/scl/fo/wpn5h716aiwd2298aot7y/AImUfh6Tb9q34G64aoAvNvs?rlkey=h6zz8c7uv69q6xntsk5x53fi2&st=rd3213rz&dl=0) | [cfg](configs/CUB200/random)      |
+| MTSD               | 50.0           |  3.1 $\pm$ 1.2 | [model](https://www.dropbox.com/scl/fo/9ucenxkyei9lz158ndi74/AC9pwYn9p1VTO63UWR3IGX4?rlkey=aobteijvyux9dzadzjgxo5m37&st=gfq52knq&dl=0) | [cfg](configs/MTSD/spclust)       |
 
 OpenDet
 | Datasets | $\rm{AP}_{known}$ | $\rm{AP}_{unk}$ | models | cfg |
 |:---:|:---:|:---:|:---:|:---:|
-| OpenImages-Animal  | 36.9 $\pm$ 8.1 | 33.0 $\pm$ 4.5 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AAB_W2-s9Fw6xYyRyu4rzbjOa/models/OpenImages/animal/opendet?dl=0&subfolder_nav_tracking=1) | [cfg](configs/OpenImages/animal)  |
-| OpenImages-Vehicle | 38.7 $\pm$ 7.8 | 14.4 $\pm$ 3.3 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AADRNwgu7l3_cx8Tc2X9VmHha/models/OpenImages/vehicle/opendet?dl=0&subfolder_nav_tracking=1) | [cfg](configs/OpenImages/vehicle) |
-| CUB200             | 63.3 $\pm$ 1.1 | 27.0 $\pm$ 3.0 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AABAWbSrlpyPkrEEwTmZ__Iga/models/CUB200/opendet?dl=0&subfolder_nav_tracking=1) | [cfg](configs/CUB200/random)      |
-| MTSD               | 51.8           |  9.9 $\pm$ 3.9 | [model](https://www.dropbox.com/sh/ciw4dhy4dpcqptb/AADOzloFV1bwf5pJMFeVOrJka/models/MTSD/opendet?dl=0&subfolder_nav_tracking=1) | [cfg](configs/MTSD/spclust)       |
+| OpenImages-Animal  | 36.9 $\pm$ 8.1 | 33.0 $\pm$ 4.5 | [model](https://www.dropbox.com/scl/fo/xgfz6js1uk3k37l6ytmku/AMbyXTeOD3AGnI069lkLjQ4?rlkey=b0e7qwr65yfgvgkjfrqtt4zdf&st=pav98n77&dl=0) | [cfg](configs/OpenImages/animal)  |
+| OpenImages-Vehicle | 38.7 $\pm$ 7.8 | 14.4 $\pm$ 3.3 | [model](https://www.dropbox.com/scl/fo/92pwbzfp9a963jom3jhb4/ADhfWdtKhCfZJtI3jK4W4ks?rlkey=wu2ynx1bk9yw55o39zb30lfyq&st=laum8tir&dl=0) | [cfg](configs/OpenImages/vehicle) |
+| CUB200             | 63.3 $\pm$ 1.1 | 27.0 $\pm$ 3.0 | [model](https://www.dropbox.com/scl/fo/q5wi2y7octvn6rvs7q6m8/AOanTp2SSk4eehuUUWc0mUM?rlkey=fh8aryz8ot810ooz8fv1h4e9d&st=0wnzivnh&dl=0) | [cfg](configs/CUB200/random)      |
+| MTSD               | 51.8           |  9.9 $\pm$ 3.9 | [model](https://www.dropbox.com/scl/fo/8kv28qbzg12kay7gxjg1h/APAJ4QxwFb3eWIwxYvY99Ck?rlkey=pxfk2xzlc3pmru778gx08rn38&st=dm4frt38&dl=0) | [cfg](configs/MTSD/spclust)       |
 
 
 ### Evaluation

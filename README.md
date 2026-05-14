@@ -17,7 +17,7 @@ To download the images, please access to each original resource and follow its i
 - [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/)
 - [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign)
 
-#### Donload Annotations  
+#### Download Annotations
 We redesinged existing annotations for the new OSOD-III scenario.  
 For downloading our annotation files, please access [this link](https://www.dropbox.com/scl/fo/bb77kl1qdfynj0vc84uxi/AFVkV5pPxBGAfWp2zrSUSoI?rlkey=0d8qo4yx5m3ou8tnzv0ycbigs&st=gwggkr1a&dl=0).
 

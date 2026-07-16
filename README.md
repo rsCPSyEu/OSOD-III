@@ -2,7 +2,9 @@
 
 
 ## Overview
-This is an official repository for **"Rectifying Open-Set Object Detection: Proper Evaluation and a Taxonomy"**.
+This is an official repository for **"Rethinking Open-Set Object Detection: Issues, A New Formulation, and Taxonomy"**, published in the **International Journal of Computer Vision (IJCV)** in 2025.
+
+Paper: https://link.springer.com/article/10.1007/s11263-025-02479-3
 
 We provide access to three datasets employed in our experiments;  
 i.e., [Open Images v6](https://storage.googleapis.com/openimages/web/download_v6.html), [Caltech-UCSD Birds-200-2011 (CUB200)](https://www.vision.caltech.edu/datasets/cub_200_2011/), and [Mapillary Traffic Sign Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign).
@@ -153,3 +155,19 @@ To evaluate our models, run the following command;
 <pre>
 python tools/train_net.py --num_gpus 8 --config-file path/to/configfile --eval-only MODEL.WEIGHTS path/to/model
 </pre>
+
+## Citation
+
+If you find our work useful for your research, please consider citing:
+
+```bibtex
+@article{hosoya2025rethinking,
+  title   = {Rethinking Open-Set Object Detection: Issues, A New Formulation, and Taxonomy},
+  author  = {Hosoya, Yusuke and Suganuma, Masanori and Okatani, Takayuki},
+  journal = {International Journal of Computer Vision (IJCV)},
+  volume  = {133},
+  pages   = {6145--6169},
+  year    = {2025},
+  doi     = {10.1007/s11263-025-02479-3}
+}
+```
